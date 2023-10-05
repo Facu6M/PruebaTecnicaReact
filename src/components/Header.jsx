@@ -14,7 +14,7 @@ const Header = ({
 }) => {
 
     const [active, setActive] = useState(false);
-
+    const [openHamburger, setOpenHamburger] = useState(false)
 
     const onDeleteProduct = (product) => {
       const results = allProducts.filter((item) => item.id !== product.id);
@@ -53,6 +53,64 @@ const Header = ({
                 <li><a href='#'>Contacto</a></li>
                 </ul>
             </nav>
+            <img
+        className={`nav_hamburguer ${openHamburger == true ? "inactive" : ""}`}
+        src="https://icon-library.com/images/hamburger-menu-icon-png/hamburger-menu-icon-png-11.jpg"
+        onClick={() => {
+          setOpenHamburger(!openHamburger);
+        }}></img>
+           <div
+                className={`modal-navbar-div ${
+                  openHamburger == false ? "" : "modal-active"
+                }`}
+                id="modal"
+              >
+                <nav className="modal-navbar">
+                  <img
+                    onClick={() => {
+                      setOpenHamburger(!openHamburger);
+                    }}
+                    className="modal-navbar_close"
+                    src="https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/close-512.png"
+                  />
+                  <ul className="modal-navbar_items">
+                    <li>
+                      <a
+                        onClick={() => {
+                          setOpenHamburger(!openHamburger);
+                        }}
+                        href="/#"
+                        className="modal-navbar__link signup"
+                      >
+                        Inicio
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        onClick={() => {
+                          setOpenHamburger(!openHamburger);
+                        }}
+                        href="/#"
+                        className="modal-navbar__link signup"
+                      >
+                        Catalogo
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        onClick={() => {
+                          setOpenHamburger(!openHamburger);
+                        }}
+                        href="/#"
+                        className="modal-navbar__link signup"
+                      >
+                        Contacto
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
             <div className="container-icon" >
         <div className="container-cart-icon" onClick={() => setActive(!active)}>
           <svg
