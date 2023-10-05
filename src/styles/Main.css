@@ -1,0 +1,268 @@
+h2 {
+  padding-top: 125px;
+  text-align: center;
+  color: rgb(28, 25, 30);
+  font-family: "Fraunces", serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 0px auto;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.card_container {
+    width: 200px;
+    justify-content: center;
+  display: flex;
+}
+
+.img img {
+  margin: 0px auto;
+  width: 150px;
+  display: inherit;
+  height: 150px;
+}
+
+.card {
+  height: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 35px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: var(--dark-cian);
+}
+
+p {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  padding-right: 25px;
+}
+
+.right {
+  font-size: 10px;
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0px solid;
+  border-radius: 10px;
+  background-color: var(--dark-cian);
+  height: 40px;
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0px auto;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+button img {
+  height: 30px;
+  width: 30px;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 23%);
+}
+
+@media (max-width: 1150px) {
+  main {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card_container {
+    display: flex;
+    max-width: 200px;
+  }
+
+  #imagen {
+    content: url("https://facu6m.github.io/card/images/image-product-desktop.jpg");
+  }
+
+  #texto {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  main {
+    margin: 0px auto;
+    width: 400px;
+  }
+
+  .card {
+    height: 520px;
+  }
+}
+
+/* BUSCADOR */
+
+
+
+.form_input{
+    margin-top: 20px;
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+    }
+
+/* FORM */
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 130px 0px 50px   0px; */
+}
+
+.form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  background-color: white;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_h2 {
+  color: #283629;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.form_label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.form_input {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #edfff0;
+  border: 2px solid #f0faf1;
+  color: #283629;
+  outline: none;
+}
+
+.form_input::placeholder {
+  color: #b5cab6;
+}
+
+.red {
+  color: red;
+  padding-bottom: 20px;
+}
+
+h5 {
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10px;
+}
+
+
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-txt a {
+  color: #76b28e;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bnt {
+  font-size: 16px;
+  height: 50px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51d94c;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+
+.calcular {
+  width: 200px;
+  font-size: 16px;
+  height: 50px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51d94c;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-attachment: #50e04b;
+}
+
+@media (max-width: 991px) {
+  form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  .form_input {
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+	.card{
+    height: 350px;
+  }
+}
