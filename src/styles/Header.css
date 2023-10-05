@@ -377,3 +377,56 @@ h1{
 }
  }
 
+
+/* ESCONDER ICON HAMBURGUER  */
+
+@media screen and (min-width: 767px) {
+  .nav_hamburguer {
+    display: none;
+  }
+}
+
+/* MOSTRAR ICON HAMBURGUER  */
+
+@media screen and (max-width: 767px) {
+  .header_hamburger {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_hamburguer {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* CUANDO CLICKEE QUE SE ABRA EL MENU */
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    display: none;
+  }
+}
+
+.inactive {
+  display: none;
+}
+
+
+/*Active menu*/
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+/*=== Show menu ===*/
+.show {
+  right: 0;
+}
